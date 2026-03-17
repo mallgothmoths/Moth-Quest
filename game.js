@@ -5,13 +5,13 @@
     office1: {
       id: 'office1',
       name: 'Office 1',
-      image: 'Office 1.jpg',
+      image: 'photos/Office 1.jpg',
       hotspots: [
         {
       id: 'approach-door',
       x: 46, y: 43, w: 9, h: 40,
       arrow: true,               // tells JS to render an arrow image
-      src: 'arrowup.svg',  // path to the arrowup image
+      src: 'Logos/arrowup.svg',  // path to the arrowup image
       action: { type: 'changeScene', target: 'office2' }
     }
        
@@ -20,39 +20,39 @@
 office2: {
   id: 'office2',
   name: 'Office 2',
-  image: 'Office 2.jpg',
+  image: 'photos/Office 2.jpg',
   hotspots: [
     {
       id: 'arrowright',
       x: 85, y: 45, w: 15, h: 15,
       arrow: true,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'left1' }
     },
     {
       id: 'lampleft',
       x: 23, y: 12, w: 8, h: 20,
-      imgSrc: 'question.png',
+      imgSrc: 'Logos/question.png',
       action: { type: 'changeScene', target: 'lampleft' }
     },
     {
       id: 'lampright',
       x: 69, y: 12, w: 8, h: 20,
-      imgSrc: 'question.png',
+      imgSrc: 'Logos/question.png',
       action: { type: 'changeScene', target: 'lampright' }
     },
     {
       id: 'arrowup-office3',
       x: 45, y: 42, w: 9, h: 60,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'office3' }
     },
     {
       id: 'arrowleft',
       x: 1, y: 45, w: 15, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'plantsleft1' }
     }
   ]
@@ -61,12 +61,12 @@ office2: {
      plantsleft1: {
       id: 'plantsleft1',
       name: 'Plants Left 1',
-      image: 'PlantsLeft1.jpg',
+      image: 'photos/PlantsLeft1.jpg',
       hotspots: [
         {
  
   x: 47, y: 22, w: 15, h: 25,
-  imgSrc: 'question.png', // new image
+  imgSrc: 'Logos/question.png', // new image
   action: { type: 'changeScene', target: 'plantsleft2' }
         }
       ]
@@ -75,12 +75,12 @@ office2: {
        plantsleft2: {
       id: 'plantsleft2',
       name: 'Plants Left 2',
-      image: 'PlantsLeft2.jpg',
+      image: 'photos/PlantsLeft2.jpg',
       hotspots: [
         {
  
   x: 55, y: 25, w: 17, h: 25,
-  imgSrc: 'question.png', // new image
+  imgSrc: 'Logos/question.png', // new image
   action: { type: 'changeScene', target: 'plantsleft3' }
         }
       ]
@@ -89,12 +89,12 @@ office2: {
         plantsleft3: {
       id: 'plantsleft3',
       name: 'Plants Left 3',
-      image: 'PlantsLeft3.jpg',
+      image: 'photos/PlantsLeft3.jpg',
       hotspots: [
         {
  
   x: 47, y: 22, w: 15, h: 25,
-  imgSrc: 'question.png', // new image
+  imgSrc: 'Logos/question.png', // new image
   action: { type: 'changeScene', target: 'plantsleftclose' }
         }
       ]
@@ -103,7 +103,7 @@ office2: {
        plantsleftclose: {
       id: 'plantsleftclose',
       name: 'Plants Left Close',
-      image: 'PlantsLeftClose.jpg',
+      image: 'photos/PlantsLeftClose.jpg',
       hotspots: [
         
  
@@ -114,12 +114,12 @@ office2: {
  lampleft: {
       id: 'lampleft',
       name: 'Lamp Left',
-      image: 'Lamp Left.jpg',
+      image: 'photos/Lamp Left.jpg',
       hotspots: [
         {
   id: 'lampleft-hotspot',
   x: 47, y: 12, w: 15, h: 25,
-  imgSrc: 'question.png', // new image
+  imgSrc: 'Logos/question.png', // new image
   action: { type: 'changeScene', target: 'lampleftclose' }
         }
       ]
@@ -128,7 +128,7 @@ office2: {
      lampleftclose: {
       id: 'lampleftclose',
       name: 'Lamp Left Close',
-      image: 'Lamp Left Close.jpg',
+      image: 'photos/Lamp Left Close.jpg',
       hotspots: [
          
       ]
@@ -136,11 +136,11 @@ office2: {
   lampright: {
       id: 'lampright',
       name: 'Lamp Right',
-      image: 'Lamp Right.jpg',
+      image: 'photos/Lamp Right.jpg',
       hotspots: [
          {
         x: 47, y: 12, w: 15, h: 25,
-        imgSrc: 'question.png', // new image
+        imgSrc: 'Logos/question.png', // new image
         action: { type: 'changeScene', target: 'lamprightclose' }
       }
          
@@ -150,7 +150,7 @@ office2: {
    lamprightclose: {
     id: 'lamprightclose',
     name: 'Lamp Right Close',
-    image: 'Lamp Right Close.jpg',
+    image: 'photos/Lamp Right Close.jpg',
     hotspots: [
      
     ]
@@ -158,12 +158,12 @@ office2: {
   office3: {
       id: 'office3',
       name: 'Office 3',
-      image: 'Office 3.jpg',
+      image: 'photos/Office 3.jpg',
       hotspots: [
   {
   id: 'zoom-record',
   x: 43, y: 34, w: 15, h: 30,
-  imgSrc: 'question.png', // path to your image
+  imgSrc: 'Logos/question.png', // path to your image
   action: { type: 'changeScene', target: 'record1' }
 }
 
@@ -174,13 +174,13 @@ office2: {
   record1: {
       id: 'record1',
       name: 'Record 1',
-      image: 'Record 1.jpg',
+      image: 'photos/Record 1.jpg',
       hotspots: [
        
         {
   id: 'listen-music',
   x: 31.25, y: 12.5, w: 36, h: 75,
-  imgSrc: 'music.png',
+  imgSrc: 'Logos/music.png',
   action: { 
     type: 'link',
     url: 'https://mallgothmoths.bandcamp.com/',
@@ -194,14 +194,14 @@ office2: {
       left1: {
       id: 'left1',
       name: 'Left 1',
-      image: 'Left 1.jpg',
+      image: 'photos/Left 1.jpg',
       hotspots: [
        
       {
       id: 'arrowdown',
       x: 45, y: 63, w: 10, h: 15,
       arrow: true,
-      src: 'arrowdown.svg',
+      src: 'Logos/arrowdown.svg',
       action: { type: 'changeScene', target: 'plantleftleft' }
     },
 
@@ -209,13 +209,13 @@ office2: {
       id: 'arrowleft',
       x: 65, y: 55, w: 5, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'around1' }
     },
       {
       id: 'arrowleft',
       x: 5, y: 55, w: 8, h: 15,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       arrow: true,
       action: { type: 'changeScene', target: 'office2' }
     },
@@ -226,13 +226,13 @@ office2: {
     plantleftleft: {
       id: 'plantleftleft',
       name: 'Plant Left Left',
-      image: 'plantleftleft.jpg',
+      image: 'photos/plantleftleft.jpg',
       hotspots: [
        
 {
   id: 'zoom-plant',
   x: 20, y: 5, w: 20, h: 30,
-  imgSrc: 'question.png',
+  imgSrc: 'Logos/question.png',
   action: { type: 'changeScene', target: 'plantleftleftclose' }
 }
 
@@ -243,12 +243,12 @@ office2: {
     plantleftleftclose: {
   id: 'plantleftleftclose',
   name: 'Plant Left Left Close',
-  image: 'plantleftleftclose.jpg',
+  image: 'photos/plantleftleftclose.jpg',
   hotspots: [
     {
   id: 'more-zoom-plant',
   x: 30, y: 25, w: 30, h: 40,
-  imgSrc: 'question.png',
+  imgSrc: 'Logos/question.png',
   action: { type: 'changeScene', target: 'plantleftleftcloser' }
 }
 
@@ -258,33 +258,33 @@ office2: {
     plantleftleftcloser: {
   id: 'plantleftleftcloser',
   name: 'Plant Left Left Closer',
-  image: 'plantleftleftcloser.jpg',
+  image: 'photos/plantleftleftcloser.jpg',
   hotspots: [
   ]
 },
 around1: {
   id: 'around1',
   name: 'Around 1',
-  image: 'Around 1.jpg',
+  image: 'photos/Around 1.jpg',
   hotspots: [
    {
       id: 'arrowup',
       x: 50, y: 55, w: 5, h: 15,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'around2' }
     },
     {
       id: 'arrowright',
       arrow: true,
       x: 90, y: 55, w: 8, h: 15,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'door2' }
     },
      {
       id: 'arrowleft',
       x: 5, y: 55, w: 8, h: 15,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       arrow: true,
       action: { type: 'changeScene', target: 'left1' }
     },
@@ -294,11 +294,11 @@ around1: {
 around2: {
   id: 'around2',
   name: 'Around 2',
-  image: 'Around 2.jpg',
+  image: 'photos/Around 2.jpg',
   hotspots: [
  {
   x: 25, y: 30, w: 30, h: 30,  // adjust position & size
-  imgSrc: 'question.png',  // the image to show
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'vendingmachine' }
 },
 
@@ -306,7 +306,7 @@ around2: {
       id: 'arrowleft',
       x: 55, y: 40, w: 5, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'otheroffice' }
     },
 
@@ -314,7 +314,7 @@ around2: {
       id: 'arrowup',
       x: 80, y: 45, w: 5, h: 15,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'gate' }
     },
   
@@ -325,11 +325,11 @@ around2: {
 gate: {
   id: 'gate',
   name: 'Gate',
-  image: 'Gate.jpg',
+  image: 'photos/Gate.jpg',
   hotspots: [
 {
   x: 33, y: 28, w: 30, h: 30,  // adjust position & size
-  imgSrc: 'question.png',  // the image to show
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'gatecloseup' }
 }, 
 
@@ -337,14 +337,14 @@ gate: {
       id: 'arrowright',
       x: 90, y: 50, w: 7, h: 15,
       arrow: true,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'roomsgeneral' }
     },
 
      {
       id: 'arrowleft',
       x: 3, y: 50, w: 7, h: 15,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       arrow: true,
       action: { type: 'changeScene', target: 'around2' }
     },
@@ -354,11 +354,11 @@ gate: {
 roomsgeneral: {
   id: 'roomsgeneral',
   name: 'Rooms General',
-  image: 'RoomsGeneral.jpg',
+  image: 'photos/RoomsGeneral.jpg',
   hotspots: [
 {
   x: 35, y: 44, w: 20, h: 30,  // adjust position & size
-  imgSrc: 'question.png',  // the image to show
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'spookyhall' }
 }, 
 
@@ -367,7 +367,7 @@ roomsgeneral: {
       id: 'arrowleft',
       x: 3, y: 50, w: 7, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'gate' }
     },
   
@@ -377,11 +377,11 @@ roomsgeneral: {
 spookyhall: {
   id: 'spookyhall',
   name: 'Spooky Hall',
-  image: 'Spooky Hall.jpg',
+  image: 'photos/Spooky Hall.jpg',
   hotspots: [
 {
   x: 48, y: 1, w: 10, h: 30,  // adjust position & size
-  imgSrc: 'question.png',  // the image to show
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'spookyhallup' }
 }, 
 
@@ -389,7 +389,7 @@ spookyhall: {
       id: 'arrowup',
       x: 48, y: 50, w: 10, h: 15,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'afterspookyhallleft' }
     },
   
@@ -399,11 +399,11 @@ spookyhall: {
 spookyhallup: {
   id: 'spookyhallup',
   name: 'Spooky Hall Up',
-  image: 'Spooky Hall Up.jpg',
+  image: 'photos/Spooky Hall Up.jpg',
   hotspots: [
 {
-  x: 73, y: 1, w: 5, h: 30,
-  imgSrc: 'question.png',
+  x: 73, y: 1, w: 5, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'spookyhallupclose' }
 }, 
 
@@ -415,25 +415,28 @@ spookyhallup: {
 spookyhallupclose: {
   id: 'spookyhallupclose',
   name: 'Spooky Hall Up Close',
-  image: 'Spooky Hall Up Close.jpg',
+  image: 'photos/Spooky Hall Up Close.jpg',
+  hotspots: [
+
+  ]
 },
 
 afterspookyhallleft: {
   id: 'afterspookyhallleft',
   name: 'After Spooky Hall Left',
-  image: 'after spooky hall left.jpg',
+  image: 'photos/after spooky hall left.jpg',
   hotspots: [
  {
       id: 'arrowright',
       arrow: true,
       x: 87, y: 50, w: 10, h: 15,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'spookyhallgoingback' }
     }, 
   
   {
-  x: 59.5, y: 24, w: 10, h: 30,
-  imgSrc: 'question.png',
+  x: 59.5, y: 24, w: 10, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'room4' }
 }, ]
 },
@@ -441,19 +444,21 @@ afterspookyhallleft: {
 room4: {
   id: 'room4',
   name: 'Room 4',
-  image: 'room 4.jpg',
+  image: 'photos/room 4.jpg',
+  hotspots: [
+  ]
 },
 
 spookyhallgoingback: {
   id: 'spookyhallgoingback',
   name: 'Spooky Hall Going Back',
-  image: 'spooky hall going back.jpg',
+  image: 'photos/spooky hall going back.jpg',
   hotspots: [
  {
       id: 'arrowright',
       arrow: true,
       x: 88, y: 50, w: 10, h: 15,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'afterspookyhallright' }
     }, 
   
@@ -461,14 +466,14 @@ spookyhallgoingback: {
       id: 'arrowleft',
       x: 2, y: 50, w: 10, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'afterspookyhallleft' }
     },
     {
       id: 'arrowup',
       x: 50, y: 45, w: 10, h: 15,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'roomsgeneral' }
     }, ]
 },
@@ -476,19 +481,19 @@ spookyhallgoingback: {
 afterspookyhallright: {
   id: 'afterspookyhallright',
   name: 'After Spooky Hall Right',
-  image: 'after spooky hall right.jpg',
+  image: 'photos/after spooky hall right.jpg',
   hotspots: [
  {
       id: 'arrowleft',
       x: 2, y: 50, w: 10, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'spookyhallgoingback' }
     }, 
   
   {
-  x: 37, y: 40, w: 10, h: 30,
-  imgSrc: 'question.png',
+  x: 37, y: 40, w: 10, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'oldwindowcloseup' }
 }, ]
 },
@@ -496,11 +501,11 @@ afterspookyhallright: {
 oldwindowcloseup: {
   id: 'oldwindowcloseup',
   name: 'Old Window Closeup',
-  image: 'old window closeup.jpg',
+  image: 'photos/old window closeup.jpg',
   hotspots: [
 {
-  x: 28, y: 55, w: 15, h: 30,
-  imgSrc: 'question.png',
+  x: 28, y: 55, w: 15, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'entrance' }
 },   ]
 },
@@ -508,16 +513,16 @@ oldwindowcloseup: {
 entrance: {
   id: 'entrance',
   name: 'Entrance',
-  image: 'entrance.jpg',
+  image: 'photos/entrance.jpg',
   hotspots: [
 {
   x: 27, y: 63, w: 15, h: 30,
-  imgSrc: 'question.png',
+  imgSrc: 'Logos/question.png',
   action: { type: 'changeScene', target: 'leftroom1' }
 }, 
 {
   x: 87, y: 45, w: 17, h: 30,
-  imgSrc: 'question.png',
+  imgSrc: 'Logos/question.png',
   action: { type: 'changeScene', target: 'afterentranceright' }
 },   ]
 },
@@ -525,20 +530,20 @@ entrance: {
 leftroom1: {
   id: 'leftroom1',
   name: 'Left Room 1',
-  image: 'leftroom1.jpg',
+  image: 'photos/leftroom1.jpg',
   hotspots: [
      {
       id: 'arrowleft',
       x: 3, y: 40, w: 10, h: 20,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'leftroom2' }
     }, 
     {
       id: 'arrowdown',
       x: 50, y: 75, w: 10, h: 20,
       arrow: true,
-      src: 'arrowdown.svg',
+      src: 'Logos/arrowdown.svg',
       action: { type: 'changeScene', target: 'entrance' }
     }, 
  ]
@@ -547,18 +552,18 @@ leftroom1: {
 leftroom2: {
   id: 'leftroom2',
   name: 'Left Room 2',
-  image: 'leftroom2.jpg',
+  image: 'photos/leftroom2.jpg',
   hotspots: [
      {
       id: 'arrowright',
       arrow: true,
       x: 87, y: 40, w: 10, h: 20,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'leftroom1' }
     }, 
     {
   x: 36, y: 56, w: 15, h: 30,
-  imgSrc: 'question.png',
+  imgSrc: 'Logos/question.png',
   action: { type: 'changeScene', target: 'leftroom2detail' }
 }, 
  ]
@@ -567,33 +572,36 @@ leftroom2: {
 leftroom2detail: {
   id: 'leftroom2detail',
   name: 'Left Room 2 Detail',
-  image: 'leftroom2detail.jpg',
+  image: 'photos/leftroom2detail.jpg',
+  hotspots: [
+      
+ ]
 },
 
 afterentranceright: {
   id: 'afterentranceright',
   name: 'After Entrance Right',
-  image: 'after entrance right.jpg',
+  image: 'photos/after entrance right.jpg',
   hotspots: [
 {
       id: 'arrowdown',
       x: 50, y: 80, w: 10, h: 15,
       arrow: true,
-      src: 'arrowdown.svg',
+      src: 'Logos/arrowdown.svg',
       action: { type: 'changeScene', target: 'hole' }
     }, 
   {
       id: 'arrowup',
       x: 71, y: 40, w: 15, h: 30,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'crawlroom' }
     },  
    {
       id: 'arrowleft',
       x: 3, y: 40, w: 10, h: 20,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'entrance' }
     }, ]
 },
@@ -601,11 +609,11 @@ afterentranceright: {
 hole: {
   id: 'hole',
   name: 'Hole',
-  image: 'hole.jpg',
+  image: 'photos/hole.jpg',
   hotspots: [
 {
   x: 15, y: 45, w: 15, h: 30,
-  imgSrc: 'question.png',
+  imgSrc: 'Logos/question.png',
   action: { type: 'changeScene', target: 'holecloseup' }
 }, 
  ]
@@ -614,20 +622,20 @@ hole: {
 crawlroom: {
   id: 'crawlroom',
   name: 'Crawl Room',
-  image: 'crawl room.jpg',
+  image: 'photos/crawl room.jpg',
   hotspots: [
     {
       id: 'arrowdown',
       x: 50, y: 80, w: 10, h: 15,
       arrow: true,
-      src: 'arrowdown.svg',
+      src: 'Logos/arrowdown.svg',
       action: { type: 'changeScene', target: 'afterentranceright' }
     }, 
     {
       id: 'arrowup',
       x: 50, y: 5, w: 10, h: 15,
       arrow: true,
-      src: 'arrowup.svg',
+      src: 'Logos/arrowup.svg',
       action: { type: 'changeScene', target: 'crawlroomup' }
     }, 
  ]
@@ -636,13 +644,13 @@ crawlroom: {
 crawlroomup: {
   id: 'crawlroomup',
   name: 'Crawl Room Up',
-  image: 'crawl room up.jpg',
+  image: 'photos/crawl room up.jpg',
   hotspots: [
      {
       id: 'arrowdown',
       x: 50, y: 80, w: 10, h: 15,
       arrow: true,
-      src: 'arrowdown.svg',
+      src: 'Logos/arrowdown.svg',
       action: { type: 'changeScene', target: 'crawlroom' }
     }, 
  ]
@@ -651,7 +659,9 @@ crawlroomup: {
 holecloseup: {
   id: 'holecloseup',
   name: 'Hole Closeup',
-  image: 'holecloseup.jpg',
+  image: 'photos/holecloseup.jpg',
+  hotspots: [
+  ]
 },
 
 
@@ -659,17 +669,20 @@ holecloseup: {
 gatecloseup: {
   id: 'gatecloseup',
   name: 'Gate Closeup',
-  image: 'gatecloseup.jpg',
+  image: 'photos/gatecloseup.jpg',
+  hotspots: [
+    // you can add navigation here later
+  ]
 },
 
 otheroffice: {
   id: 'otheroffice',
   name: 'Other Office',
-  image: 'Other Office.jpg',
+  image: 'photos/Other Office.jpg',
   hotspots: [
  {
-  x: 14, y: 3, w: 30, h: 30,
-  imgSrc: 'question.png',
+  x: 14, y: 3, w: 30, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'horseshoe3' }
 },  ]
 },
@@ -677,18 +690,21 @@ otheroffice: {
 horseshoe3: {
   id: 'horseshoe3',
   name: 'Horseshoe 3',
-  image: 'Horseshoe 3.jpg',
+  image: 'photos/Horseshoe 3.jpg',
+  hotspots: [
+    // you can add navigation here later
+  ]
 },
 
 
 vendingmachine: {
   id: 'vendingmachine',
   name: 'Vending Machine',
-  image: 'Vending Machine.jpg',
+  image: 'photos/Vending Machine.jpg',
   hotspots: [
 {
-  x: 32, y: 35, w: 30, h: 30, 
-  imgSrc: 'question.png', 
+  x: 32, y: 35, w: 30, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'vendingdoor' }
 },   ]
 },
@@ -696,11 +712,11 @@ vendingmachine: {
 vendingdoor: {
   id: 'vendingdoor',
   name: 'Vending Door',
-  image: 'Vending Door.jpg',
+  image: 'photos/Vending Door.jpg',
   hotspots: [
 {
-  x: 37, y: 35, w: 30, h: 30,
-  imgSrc: 'question.png',
+  x: 37, y: 35, w: 30, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'vendingdooropen' }
 },  ]
 },
@@ -708,25 +724,27 @@ vendingdoor: {
 vendingdooropen: {
   id: 'vendingdooropen',
   name: 'Vending Door Open',
-  image: 'Vending Door Open.jpg',
- 
+  image: 'photos/Vending Door Open.jpg',
+  hotspots: [
+    // you can add navigation here later
+  ]
 },
 
 door2: {
   id: 'door2',
   name: 'Door 2',
-  image: 'Door 2.jpg',
+  image: 'photos/Door 2.jpg',
   hotspots: [
    {
       id: 'arrowleft',
       x: 3, y: 50, w: 7, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'door3' }
     },
      {
-  x: 5, y: 7, w: 20, h: 30,
-  imgSrc: 'question.png',
+  x: 5, y: 7, w: 20, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'window3' }
 },
 
@@ -736,14 +754,14 @@ door2: {
 window3: {
   id: 'window3',
   name: 'Window 3',
-  image: 'Window 3.jpg',
+  image: 'photos/Window 3.jpg',
   hotspots: [
    
   {
       id: 'arrowleft',
       x: 3, y: 50, w: 7, h: 15,
       arrow: true,
-      src: 'arrowleft.svg',
+      src: 'Logos/arrowleft.svg',
       action: { type: 'changeScene', target: 'window3close' }
     },
 
@@ -753,19 +771,19 @@ window3: {
 window3close: {
   id: 'window3close',
   name: 'Window 3 Close',
-  image: 'Window 3.1.jpg',
+  image: 'photos/Window 3.1.jpg',
   hotspots: [
    
      {
-  x: 22, y: 20, w: 20, h: 30,
-  imgSrc: 'question.png', 
+  x: 22, y: 20, w: 20, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'window3detail' }
 },
 {
       id: 'arrowright',
       arrow: true,
       x: 90, y: 50, w: 7, h: 15,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'window3' }
     },
 
@@ -775,27 +793,31 @@ window3close: {
 window3detail: {
   id: 'window3detail',
   name: 'Window 3 Detail',
-  image: 'Window 3.1.1.jpg',
- 
+  image: 'photos/Window 3.1.1.jpg',
+  hotspots: [
+   
+   
+
+   ]
 },
 
 door3: {
   id: 'door3',
   name: 'Door 3',
-  image: 'Door 3.jpg',
+  image: 'photos/Door 3.jpg',
   hotspots: [
  {
       id: 'arrowright',
       x: 90, y: 50, w: 7, h: 15,
       arrow: true,
-      src: 'arrowright.png',
+      src: 'Logos/arrowright.png',
       action: { type: 'changeScene', target: 'door2' }
     },
   
   {
   id: 'mailbox',
-  x: 5, y: 60, w: 20, h: 30, 
-  imgSrc: 'question.png', 
+  x: 5, y: 60, w: 20, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'mailbox' }
 }
 ]
@@ -804,12 +826,12 @@ door3: {
 mailbox: {
   id: 'mailbox',
   name: 'Mailbox',
-  image: 'mailbox.jpg',
+  image: 'photos/mailbox.jpg',
   hotspots: [
    {
   id: 'mailboxcloseup',
-  x: 40, y: 40, w: 20, h: 30,  
-  imgSrc: 'question.png',  
+  x: 40, y: 40, w: 20, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'mailboxcloseup' }
 }
 
@@ -819,11 +841,11 @@ mailbox: {
 mailboxcloseup: {
   id: 'mailboxcloseup',
   name: 'Mailbox Closeup',
-  image: 'mailbox closeup.jpg',
+  image: 'photos/mailbox closeup.jpg',
   hotspots: [
    {
-  x: 15, y: 5, w: 20, h: 30, 
-  imgSrc: 'question.png', 
+  x: 15, y: 5, w: 20, h: 30,  // adjust position & size
+  imgSrc: 'Logos/question.png',  // the image to show
   action: { type: 'changeScene', target: 'mailboxsurprise' }
 }
 
@@ -833,8 +855,11 @@ mailboxcloseup: {
 mailboxsurprise: {
   id: 'mailboxsurprise',
   name: 'Mailbox Surprise',
-  image: 'mailbox surprise.jpg',
+  image: 'photos/mailbox surprise.jpg',
+  hotspots: [
+  
 
+   ]
 }
   };
 
@@ -861,7 +886,8 @@ mailboxsurprise: {
       return;
     }
 
-  
+    
+
 // Scenes where back button should NOT appear
 const noBackScenes = [
   'office1',
@@ -946,6 +972,8 @@ scene.hotspots.forEach(h => {
 
 // --- NEW: Render characters for this scene ---
   updateSceneCharacters(currentSceneId);
+
+  
 
     function handleHotspotClick(hotspot) {
       const action = hotspot.action;
@@ -1101,7 +1129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const characters = [
   {
     id: 'froghat',
-    src: 'froghat.svg',
+    src: 'creatures/froghat.svg',
     width: '30%',
     height: '45%',
     top: '15%',
@@ -1116,14 +1144,14 @@ const characters = [
         'Oogly Boogly!',
       ],
     },
-    messageIndex: 0, 
+    messageIndex: 0, // to track which message to show next
   },
   {
     id: 'angryguy',
-    src: 'angryguy.svg',
-    width: '30%', 
+    src: 'creatures/angryguy.svg',
+    width: '30%',        // adjust size as you like
     height: '45%',
-    top: '22%', 
+    top: '22%',           // adjust position as you like
     left: '39%',
     scenes: ['plantsleftclose'],
     action: {
@@ -1138,10 +1166,10 @@ const characters = [
     messageIndex: 0,  },
     {
     id: 'moth',
-    src: 'moth.svg',
-    width: '30%', 
+    src: 'creatures/moth.svg',
+    width: '30%',        // adjust size as you like
     height: '51%',
-    top: '22%', 
+    top: '22%',           // adjust position as you like
     left: '39%',
     scenes: ['mailboxsurprise'],
 action: {
@@ -1156,10 +1184,10 @@ action: {
     messageIndex: 0,   },
     {
     id: 'evilrat',
-    src: 'evilrat.svg',
-    width: '50%',  
+    src: 'creatures/evilrat.svg',
+    width: '50%',        // adjust size as you like
     height: '60%',
-    top: '30%', 
+    top: '30%',           // adjust position as you like
     left: '39%',
     scenes: ['vendingdooropen'],
     action: {
@@ -1175,10 +1203,10 @@ action: {
   },
    {
     id: 'mousereading',
-    src: 'mousereading.svg',
-    width: '40%',
+    src: 'creatures/mousereading.svg',
+    width: '40%',        // adjust size as you like
     height: '51%',
-    top: '36%', 
+    top: '36%',           // adjust position as you like
     left: '45%',
     scenes: ['gatecloseup'],
 action: {
@@ -1193,10 +1221,10 @@ action: {
     messageIndex: 0,   },
   {
     id: 'angrywizard',
-    src: 'angrywizard.svg',
-    width: '40%', 
+    src: 'creatures/angrywizard.svg',
+    width: '40%',        // adjust size as you like
     height: '51%',
-    top: '36%',  
+    top: '36%',           // adjust position as you like
     left: '38%',
     scenes: ['holecloseup'],
 action: {
@@ -1211,10 +1239,10 @@ action: {
     messageIndex: 0,   },
     {
     id: 'coffeerat',
-    src: 'coffeerat.svg',
-    width: '40%',
+    src: 'creatures/coffeerat.svg',
+    width: '40%',        // adjust size as you like
     height: '51%',
-    top: '50%', 
+    top: '50%',           // adjust position as you like
     left: '5%',
     scenes: ['crawlroomup'],
 action: {
@@ -1229,10 +1257,10 @@ action: {
     messageIndex: 0,   },
    {
     id: 'kitty',
-    src: 'kitty.svg',
-    width: '40%',
+    src: 'creatures/kitty.svg',
+    width: '40%',        // adjust size as you like
     height: '51%',
-    top: '20%',
+    top: '20%',           // adjust position as you like
     left: '60%',
     scenes: ['spookyhallupclose'],
 action: {
