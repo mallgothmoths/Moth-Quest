@@ -325,7 +325,7 @@ around2: {
 gate: {
   id: 'gate',
   name: 'Gate',
-  image: 'photos/Gate.jpg',
+  image: 'photos/gate.jpg',
   hotspots: [
 {
   x: 33, y: 28, w: 30, h: 30,  // adjust position & size
@@ -354,7 +354,7 @@ gate: {
 roomsgeneral: {
   id: 'roomsgeneral',
   name: 'Rooms General',
-  image: 'photos/RoomsGeneral.jpg',
+  image: 'photos/roomsgeneral.jpg',
   hotspots: [
 {
   x: 35, y: 44, w: 20, h: 30,  // adjust position & size
@@ -377,7 +377,7 @@ roomsgeneral: {
 spookyhall: {
   id: 'spookyhall',
   name: 'Spooky Hall',
-  image: 'photos/Spooky Hall.jpg',
+  image: 'photos/spooky hall.jpg',
   hotspots: [
 {
   x: 48, y: 1, w: 10, h: 30,  // adjust position & size
@@ -399,7 +399,7 @@ spookyhall: {
 spookyhallup: {
   id: 'spookyhallup',
   name: 'Spooky Hall Up',
-  image: 'photos/Spooky Hall Up.jpg',
+  image: 'photos/spooky hall up.jpg',
   hotspots: [
 {
   x: 73, y: 1, w: 5, h: 30,  // adjust position & size
@@ -415,7 +415,7 @@ spookyhallup: {
 spookyhallupclose: {
   id: 'spookyhallupclose',
   name: 'Spooky Hall Up Close',
-  image: 'photos/Spooky Hall Up Close.jpg',
+  image: 'photos/spooky hall up close.jpg',
   hotspots: [
 
   ]
@@ -444,7 +444,7 @@ afterspookyhallleft: {
 room4: {
   id: 'room4',
   name: 'Room 4',
-  image: 'photos/room 4.jpg',
+  image: 'photos/Room 4.jpg',
   hotspots: [
   ]
 },
@@ -581,7 +581,7 @@ leftroom2detail: {
 afterentranceright: {
   id: 'afterentranceright',
   name: 'After Entrance Right',
-  image: 'photos/after entrance right.jpg',
+  image: 'photos/After entrance right.jpg',
   hotspots: [
 {
       id: 'arrowdown',
