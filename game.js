@@ -61,7 +61,7 @@ office2: {
      plantsleft1: {
       id: 'plantsleft1',
       name: 'Plants Left 1',
-      image: 'photos/PlantsLeft1.jpg',
+      image: 'photos/plantsleft1.jpg',
       hotspots: [
         {
  
@@ -75,7 +75,7 @@ office2: {
        plantsleft2: {
       id: 'plantsleft2',
       name: 'Plants Left 2',
-      image: 'photos/PlantsLeft2.jpg',
+      image: 'photos/plantsleft2.jpg',
       hotspots: [
         {
  
@@ -89,7 +89,7 @@ office2: {
         plantsleft3: {
       id: 'plantsleft3',
       name: 'Plants Left 3',
-      image: 'photos/PlantsLeft3.jpg',
+      image: 'photos/plantsleft3.jpg',
       hotspots: [
         {
  
@@ -103,7 +103,7 @@ office2: {
        plantsleftclose: {
       id: 'plantsleftclose',
       name: 'Plants Left Close',
-      image: 'photos/PlantsLeftClose.jpg',
+      image: 'photos/plantsleftclose.jpg',
       hotspots: [
         
  
