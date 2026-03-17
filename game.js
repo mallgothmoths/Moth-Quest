@@ -513,7 +513,7 @@ oldwindowcloseup: {
 entrance: {
   id: 'entrance',
   name: 'Entrance',
-  image: 'photos/entrance.jpg',
+  image: 'photos/Entrance.jpg',
   hotspots: [
 {
   x: 27, y: 63, w: 15, h: 30,
