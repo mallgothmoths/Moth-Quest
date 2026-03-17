@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moth Quest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="rotate-overlay" class="rotate-overlay">
+  <div class="rotate-inner">
+  <img src="Logos/rotatescreen.svg" alt="Rotate screen" class="rotate-icon">    <p>Rotate your device! Please! Landscape mode!!</p>
+  </div>
+</div>
+
+<div id="menu" class="menu-overlay">
+  <div class="menu-inner">
+    <div id="header-logos">
+      <img src="logos/mgms-present.svg" alt="the mall goth moths present">
+      <img src="logos/Moth-quest-logo.svg" alt="Moth Quest Logo">
+    </div>
+    <button id="enter-btn" class="enter-btn" aria-label="Enter the game"><img src="Logos/enter.svg" alt="Enter"></button>
+    <button id="about-btn" class="menu-btn" aria-label="About">
+    <img src="Logos/about.svg" alt="About">
+  </button>
+
+  <button id="howto-btn" class="menu-btn" aria-label="How To Play">
+    <img src="Logos/howtoplay.svg" alt="How To Play">
+  </button>
+
+  <button id="mothmusic-btn" class="menu-btn" aria-label="Moth Music">
+  <img src="Logos/mothmusic.svg" alt="Moth Music">
+</button>
+  </div>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="about-page" class="menu-overlay" style="display:none;">
+  <div class="menu-inner about-inner">
+    
+    <div class="about-content">
+      <p>
+        <strong>Moth Quest</strong> is a point-and-click adventure. I really wanted to make a game that felt like an old Flash Game.
+        <strong> The Mall Goth Moths </strong> is a glam horror metal band based in the Ether (near Idaho).
+        If you'd like to say hi, reach out on Instagram @mallgothmoths or email at mallgothmoths@gmail.com. If you'd like to donate to support improvements to this game - animations, inventory, more scenes,etc - you can click the Moth Music link! Help a Moth out! Love you!
+      </p>
+        <p>
+        Thanks for reading, go click around!
+      </p>
+
+      <p>
+- Kat      </p>
+
+    </div>
+
+    <!-- Go Back Button -->
+    <button id="about-back-btn" class="back-btn" aria-label="Go back">
+      <img src="Logos/back-button.svg" alt="Back">
+    </button>
+
+  </div>
+</div>
+
+<!-- HOW TO PLAY PAGE -->
+<div id="howto-page" class="menu-overlay" style="display:none;">
+  <div class="menu-inner about-inner">
+    
+    <div class="about-content">
+      <p>
+    
+        - Click around!<br>
+        - There's no jumpscares, just vibes and lil guys.<br>
+        - Have fun!
+      </p>
+
+      <button id="howto-back-btn" class="back-btn" aria-label="Go back">
+  <img src="Logos/back-button.svg" alt="Back">
+</button>
+    </div>
+
+   
+
+  </div>
+</div>
+
+<div id="game" style="display:none;">
+  <button id="menu-btn" class="menu-game-btn" aria-label="Main Menu">
+  <img src="Logos/mainmenu.svg" alt="Main Menu">
+</button>
+
+  <button id="back-btn" class="back-btn" style="display:none;" aria-label="Go back"><img src="Logos/back-button.svg" alt="Back"></button>
+  <div id="scene-wrapper">
+    <img id="scene" src="photos/Office 1.jpg" alt="Scene">
+<div id="hotspots">
+  <!-- Left side rectangle -->
+  <div class="arrow-hotspot left" onclick="goBack()"></div>
+
+  <!-- Right side rectangle -->
+  <div class="arrow-hotspot right" onclick="goForward()"></div>
+  
+</div>
+
+<!-- Container for scene characters -->
+<div id="characters" >
+
+</div>
+
+</div>
+
+
+
+
+
+<script src="game.js"></script>
+
+<div id="character-tooltip" style="
+    position: absolute;
+    display: none;
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 100;
+"></div>
+
+</body>
+</html>

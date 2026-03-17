@@ -1,0 +1,469 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  background-image: url(photos/Office\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#game { background: transparent; }
+
+@media screen {
+  
+}
+
+/* Rotation overlay for portrait mode */
+.rotate-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 100; align-items: center; justify-content: center; }
+.rotate-inner { text-align: center; color: #fff; }
+.rotate-icon { font-size: clamp(3rem, 12vw, 8rem); margin-bottom: clamp(12px, 2vh, 24px); }
+.rotate-inner p { font-size: clamp(1rem, 2.5vw, 1.5rem); margin: 0; letter-spacing: 0.05em; }
+
+/* Show overlay in portrait orientation */
+@media (orientation: portrait) {
+  .rotate-overlay { display: flex; }
+}
+
+.rotate-icon {
+  width: 50%;     /* adjust size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Menu and header-logos display */
+/* Menu overlay (responsive) */
+.menu-overlay{ position: fixed; inset: 0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.45); z-index: 50; }
+.menu-inner{ text-align:center; padding: clamp(12px, 2.5vh, 28px); }
+
+/* Header logos: stacked (small above large), responsive sizes, white color */
+#header-logos{ display:flex; flex-direction:column; gap: clamp(6px, 1.5vh, 20px); align-items:center; justify-content:center; }
+#header-logos img{ width: auto; display:block; max-width: 80vw; object-fit: contain; filter: brightness(0) invert(1); }
+
+/* Small label above main logo */
+#header-logos img:first-child{ height: clamp(2.5rem, 6vh, 4rem); }
+/* Make Moth Quest logo bigger */
+#header-logos img:last-child {
+  position: relative;
+  left: 5%;   /* keeps it slightly right */
+  top: -5%;    /* keeps it slightly higher */
+  height: clamp(20rem, 55vh, 45rem);  /* increase min, preferred, and max height */
+}
+
+/* Enter button: bottom left, responsive */
+.enter-btn {
+  position: absolute;
+  bottom: 50%;      /* distance from bottom of screen */
+  left: 5%;         /* distance from left edge */
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.enter-btn img {
+  height: clamp(1.5rem, 6vh, 3.5rem);
+  width: auto;
+  bottom: 70%;      /* distance from bottom of screen */
+  display: block;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(749%) hue-rotate(0deg) brightness(103%) contrast(103%)
+          drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00)
+          drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00);
+  animation: glowPulse 2s infinite;
+}
+
+/* About + How To Play buttons: top-right quadrant */
+#about-btn,
+#howto-btn {
+  position: absolute;
+  right: 10%;            /* distance from right edge */
+  width: clamp(1.5rem, 6vh, 3.5rem); /* same size as Enter */
+  height: auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Vertical positions */
+#about-btn { top: 20%; }   /* slightly lower than top */
+#howto-btn { top: 30%; }   /* slightly lower than About */
+
+/* Glow effect same as Enter */
+#about-btn img,
+#howto-btn img {
+  height: clamp(1.5rem, 6vh, 3.5rem);
+  width: auto;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(99%) saturate(749%) hue-rotate(359deg) brightness(103%) contrast(103%)
+          drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00)
+          drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00);
+  animation: glowPulse 2s infinite;
+}
+
+#about-btn:hover img,
+#howto-btn:hover img {
+  animation: glowPulse 1.2s infinite;
+}
+
+.enter-btn:hover img {
+  animation: glowPulse 1.2s infinite;
+}
+
+
+
+
+
+/* All menu button images glow yellow */
+.enter-btn img{
+  height: clamp(1.5rem, 6vh, 3.5rem);
+  width: auto;
+  display: block;
+
+  /* Make them yellow */
+  filter: brightness(0) saturate(100%) invert(84%) sepia(99%) saturate(749%) hue-rotate(359deg) brightness(103%) contrast(103%)
+          drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00)
+          drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00);
+
+  animation: glowPulse 2s infinite;
+}
+
+/* Faster glow on hover */
+.enter-btn:hover img,
+.menu-btn:hover img {
+  animation: glowPulse 1.2s infinite;
+}.enter-btn:hover img{ animation: glowPulse 1.2s infinite; }
+.enter-btn:focus{ outline: none; }
+
+.menu-inner {
+  position: relative;
+}
+
+/* About + How To Play buttons */
+.menu-btn {
+  position: absolute;
+  right: clamp(12px, 3vw, 40px);
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+/* Make About + How To Play same size as Enter and glow yellow */
+.menu-btn img {
+  height: clamp(1.5rem, 6vh, 3.5rem); /* same as Enter */
+  width: auto;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(99%) saturate(749%) hue-rotate(359deg) brightness(103%) contrast(103%)
+          drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00)
+          drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00);
+  animation: glowPulse 2s infinite;
+}
+
+
+
+.menu-btn:hover img {
+  animation: glowPulse 1.2s infinite;
+}
+
+
+
+/* Enter button: bottom left */
+.enter-btn {
+  position: absolute;
+  bottom: 10%;   /* height from bottom */
+  left: 5%;      /* distance from left edge */
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* About + How To Play buttons: top right quadrant */
+#about-btn,
+#howto-btn,
+#mothmusic-btn {
+  position: absolute;
+  right: 20%;     /* distance from right edge */
+  width: clamp(1.5rem, 6vh, 3.5rem); /* same as Enter */
+  height: auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Specific vertical positions */
+#about-btn { top: 15%; }      /* slightly lower than top */
+#howto-btn { top: 30%; }      /* slightly lower than About */
+#mothmusic-btn { top: 44%; }  /* slightly lower than How To Play */
+
+
+@keyframes glowPulse {
+  0%, 100%{ filter: drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00) drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00); }
+  50%{ filter: drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00) drop-shadow(0 0 clamp(20px, 5vmax, 40px) #ffff00) drop-shadow(0 0 clamp(30px, 7.5vmax, 60px) #ffff00); }
+}
+
+/* Small screens tweaks */
+@media (max-width: 520px){
+  .menu-inner{ padding: 12px; }
+}
+
+/* Larger screens: limit overlay content width */
+@media (min-width: 1200px){
+  .menu-inner{ max-width: 70vw; }
+}
+
+/* Game scene and hotspots */
+#game { display: flex; flex-direction: column; height: 100vh; background: transparent; overflow: hidden; }
+#scene-wrapper { position: relative; flex: 1; overflow: hidden; background: transparent; min-height: 100%; }
+#scene { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#hotspots { position: absolute; top: 0; left: 0; width: 100%; height: 100%;  z-index: 10; display: block !important; }
+.hotspot { position: absolute; border: 2px solid #ffff0061; background: rgba(255,255,0,0.15); cursor: pointer; pointer-events: auto; transition: all 0.2s; min-width: 20px; min-height: 20px; }
+.hotspot:hover { background: rgba(255,255,0,0.4); border: 4px solid #ffff00; box-shadow: 0 0 20px rgba(255,255,0,0.8), inset 0 0 10px rgba(255,255,0,0.3); }
+.hotspot:active { background: rgba(255,255,0,0.5); }
+
+/* Back button */
+#back-btn { position: absolute; top: clamp(90%, 2vh, 16px); left: clamp(8px, 2vw, 16px); z-index: 20; border: none; background: transparent; padding: 0; cursor: pointer; }
+#back-btn img { height: clamp(2rem, 6vh, 4rem); width: auto; filter: drop-shadow(0 0 8px rgba(255,255,0,0.4)); transition: filter 0.2s; }
+#back-btn:hover img { filter: drop-shadow(0 0 15px rgba(255,255,0,0.8)); }
+
+
+
+#hotspots 
+
+
+.arrow-hotspot {
+  position: absolute;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.arrow-hotspot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+
+
+/* Main Menu button: bottom right */
+#mainmenu-btn {
+  position: absolute;
+  bottom: 10%;    /* distance from bottom */
+  right: 5%;      /* distance from right edge */
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 50;
+}
+
+#mainmenu-btn img {
+  height: clamp(1.5rem, 6vh, 3.5rem);
+  width: auto;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(99%) saturate(749%) hue-rotate(359deg) brightness(103%) contrast(103%)
+          drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00)
+          drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00);
+  animation: glowPulse 2s infinite;
+}
+
+#mainmenu-btn:hover img {
+  animation: glowPulse 1.2s infinite;
+}
+
+/* Main Menu button: bottom right like Enter, glowing yellow */
+#mainmenu-btn {
+  position: absolute;
+  bottom: 10%;   /* distance from bottom */
+  right: 5%;     /* distance from right edge */
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 50;
+}
+
+#mainmenu-btn img {
+  height: clamp(1.5rem, 6vh, 3.5rem);
+  width: auto;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(99%) saturate(749%) hue-rotate(359deg) brightness(103%) contrast(103%)
+          drop-shadow(0 0 clamp(6px, 1.5vmax, 12px) #ffff00)
+          drop-shadow(0 0 clamp(12px, 3vmax, 24px) #ffff00);
+  animation: glowPulse 2s infinite;
+}
+
+#mainmenu-btn:hover img {
+  animation: glowPulse 1.2s infinite;
+}
+
+/* ABOUT PAGE */
+
+.about-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Position About Back button bottom left */
+/* ABOUT Back Button */
+#about-back-btn {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;          /* moved to right */
+  left: auto;         /* cancel left positioning */
+
+  width: 20%;          /* same size as game back button */
+  background: none;   /* transparent background */
+  border: none;
+  padding: 0;
+}
+
+#about-back-btn img {
+  width: 100%;
+  height: auto;
+  animation: purplePulse 2s infinite; /* subtle pulse */
+  transition: filter 0.2s;
+  
+}
+
+
+
+
+.about-content {
+  font-family: 'Courier Prime', monospace;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+
+
+@keyframes purplePulse {
+  0%, 100% { 
+    filter: drop-shadow(0 0 8px #b19cd9) drop-shadow(0 0 12px #8441ff);
+  }
+  50% { 
+    filter: drop-shadow(0 0 16px #b19cd9) drop-shadow(0 0 24px #8441ff);
+  }
+}
+
+/* How To Play Back Button - White with purple glow */
+#howto-back-btn {
+ position: absolute;
+  bottom: 10%;
+  right: 5%;          /* moved to right */
+  left: auto;         /* cancel left positioning */
+
+  width: 20%;          /* same size as game back button */
+  background: none;   /* transparent background */
+  border: none;
+  padding: 0;
+}
+
+#howto-back-btn img {
+  width: 100%;
+  height: auto;
+  animation: purplePulse 2s infinite; /* subtle pulse */
+  transition: filter 0.2s;
+}
+
+.menu-game-btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 15%;
+  height: 15%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-game-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu-game-btn:hover {
+  filter: drop-shadow(0 0 8px purple);
+}
+
+.menu-game-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.arrow-hotspot {
+  position: absolute;
+  top: 0;
+  width: 15%;        /* width of the rectangles */
+  height: 100%;      /* full height */
+  background: rgba(255, 0, 0, 0.3);  /* translucent red */
+  cursor: pointer;
+  z-index: 100;      /* above the scene */
+}
+
+/* Left side */
+.arrow-hotspot.left {
+  left: 0;
+}
+
+/* Right side */
+.arrow-hotspot.right {
+  right: 0;
+}
+
+/* Hide Main Menu button in portrait mode */
+@media (orientation: portrait) {
+  #menu-btn {
+    display: none !important;
+  }
+}
+
+#characters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.character-hotspot {
+  pointer-events: auto;
+}
+
+
+
+
+
+
+
+
