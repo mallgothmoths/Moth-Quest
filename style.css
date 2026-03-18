@@ -3,7 +3,7 @@ body{
   padding: 0%;
   height: 100vh;
   height: 100dvh;
-  background-image: url(photos/Office\ 1.jpg);
+  background-image: url(photos/Office 1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -226,7 +226,7 @@ html, body {
 }
 
 /* Game scene and hotspots */
-#game { display: flex; flex-direction: column; height: 100vh; background: transparent; overflow: hidden; }
+#game { display: flex; flex-direction: column; height: 100vh; height: 100dvh; background: transparent; overflow: hidden; }
 #scene-wrapper { position: relative; flex: 1; overflow: hidden; background: transparent; min-height: 100%; }
 #scene { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 #hotspots { position: absolute; top: 0; left: 0; width: 100%; height: 100%;  z-index: 10; display: block !important; }
@@ -241,7 +241,7 @@ html, body {
 
 
 
-#hotspots 
+#hotspots {}
 
 
 .arrow-hotspot {
