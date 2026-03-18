@@ -9,7 +9,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
-  touch-action: none;
+
 }
 
 #game { background: transparent; }
